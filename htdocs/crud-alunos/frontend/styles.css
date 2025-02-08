@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.btn-adicionar {
+    display: block;
+    width: fit-content;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-adicionar:hover {
+    background-color: darkgreen;
+}
+
+.btn-editar {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background-color: gold;
+}
+
+.btn-excluir {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-excluir:hover {
+    background-color: darkred;
+}
+
+.container {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-salvar {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-salvar:hover {
+    background-color: darkgreen;
+}
+
+.btn-voltar {
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-voltar:hover {
+    background-color: darkgray;
+}
+
+.mensagem {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mensagem-sucesso {
+    background-color: green;
+}
+
+.mensagem-erro {
+    background-color: red;
+}
+
