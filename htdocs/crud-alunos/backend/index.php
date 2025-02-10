@@ -7,20 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD de Alunos</title>
     <link rel="stylesheet" href="../frontend/styles.css">
-    <style>
-        .btn-add {
-            background-color: green;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .btn-add:hover {
-            background-color: darkgreen;
-        }
-    </style>
 </head>
 <body>
     <h1>CADASTRO DE ALUNOS</h1>
@@ -61,11 +47,13 @@
     }
     $conn->close();
     ?>
-</tbody>
-
+    </tbody>
     </table>
 
-    <button class="btn-add" onclick="window.location.href='createAluno.php'">Adicionar Novo Aluno</button>
+    <div style="text-align: left;">
+        <button class="btn-adicionar" onclick="window.location.href='createAluno.php'">Adicionar Novo Aluno</button>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

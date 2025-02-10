@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
         <?php echo $mensagem; ?>
     </div>  
 
-    <a href="index.php" class="btn-voltar">Voltar para a Lista</a>
+    <a href="index.php" class="btn-voltar-excluir">Voltar para a Lista</a>
 
 </body>
 </html>

@@ -1,8 +1,10 @@
+/* Geral */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
+/* Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -18,17 +20,42 @@ th, td {
     text-align: left;
 }
 
-.btn-adicionar {
+/* Mensagens */
+.mensagem {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
     display: block;
+    margin-bottom: 20px;
     width: fit-content;
-    margin: 20px auto; 
-    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.mensagem-sucesso {
+    background-color: green;
+}
+
+.mensagem-erro {
+    background-color: red;
+}
+
+/* Botões */
+.btn-adicionar {
+    display: inline-block;
+    width: auto;
+    margin: 20px 0;
+    padding: 10px 15px;
     background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    text-align: left;
 }
 
 .btn-adicionar:hover {
@@ -69,50 +96,7 @@ th, td {
     background-color: darkred;
 }
 
-.container {
-    width: 40%;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input {
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-}
-
-.btn-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
+/* Botões de ação */
 .btn-salvar {
     background-color: green;
     color: white;
@@ -144,25 +128,64 @@ input[type="checkbox"] {
     background-color: darkgray;
 }
 
-.mensagem {
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 18px;
+.btn-voltar-excluir {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: gray;
     color: white;
-    display: inline-block;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-voltar-excluir:hover {
+    background-color: darkgray;
+}
+
+/* Containers */
+.container {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
-.mensagem-sucesso {
-    background-color: green;
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.mensagem-erro {
-    background-color: red;
+label {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Agrupamento de Botões */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
